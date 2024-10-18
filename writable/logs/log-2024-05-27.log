@@ -1,0 +1,280 @@
+INFO - 2024-05-27 22:30:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-27 22:30:33 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp1\htdocs\apotek\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp1\htdocs\apotek\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'apotekrahmah', 3306, '', 0)
+#1 C:\xampp1\htdocs\apotek\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp1\htdocs\apotek\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp1\htdocs\apotek\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp1\htdocs\apotek\vendor\codeigniter4\framework\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp1\htdocs\apotek\vendor\codeigniter4\framework\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\xampp1\htdocs\apotek\app\Controllers\Login.php(45): CodeIgniter\BaseModel->first()
+#7 C:\xampp1\htdocs\apotek\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\Login->processLogin()
+#8 C:\xampp1\htdocs\apotek\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 C:\xampp1\htdocs\apotek\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp1\htdocs\apotek\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp1\htdocs\apotek\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp1\\htdoc...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp1\htdocs\apotek\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp1\htdocs\apotek\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp1\htdocs\apotek\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp1\htdocs\apotek\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp1\htdocs\apotek\vendor\codeigniter4\framework\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp1\htdocs\apotek\vendor\codeigniter4\framework\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#5 C:\xampp1\htdocs\apotek\app\Controllers\Login.php(45): CodeIgniter\BaseModel->first()
+#6 C:\xampp1\htdocs\apotek\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\Login->processLogin()
+#7 C:\xampp1\htdocs\apotek\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\xampp1\htdocs\apotek\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp1\htdocs\apotek\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp1\htdocs\apotek\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp1\\htdoc...')
+#11 {main}
+CRITICAL - 2024-05-27 22:30:33 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Login.php(45): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->processLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp1\\htdocs\\apotek\\public\\index.php')
+INFO - 2024-05-27 22:32:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-27 22:32:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-27 22:32:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-27 22:32:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-27 22:32:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-27 22:32:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-27 22:32:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-27 22:33:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-27 22:33:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-27 22:50:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-27 22:50:47 --> Class "App\Models\JenisObatModel" not found
+in APPPATH\Controllers\JenisObat.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JenisObat->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp1\\htdocs\\apotek\\public\\index.php')
+CRITICAL - 2024-05-27 22:53:55 --> Class "App\Models\JenisObatModel" not found
+in APPPATH\Controllers\JenisObat.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JenisObat->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp1\\htdocs\\apotek\\public\\index.php')
+INFO - 2024-05-27 23:03:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-27 23:03:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-27 23:04:10 --> Class "App\Models\JenisObatModel" not found
+in APPPATH\Controllers\JenisObat.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JenisObat->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp1\\htdocs\\apotek\\public\\index.php')
+CRITICAL - 2024-05-27 23:04:18 --> Class "App\Models\JenisObatModel" not found
+in APPPATH\Controllers\JenisObat.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\JenisObat->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp1\\htdocs\\apotek\\public\\index.php')
+INFO - 2024-05-27 23:04:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-27 23:04:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-27 23:04:28 --> Call to undefined method App\Models\ObatKeluarModel::getJenisObat
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\KelolaObatKeluar.php(28): CodeIgniter\Model->__call('getJenisObat', [])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KelolaObatKeluar->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KelolaObatKeluar))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp1\\htdocs\\apotek\\public\\index.php')
+INFO - 2024-05-27 23:04:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-27 23:04:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-27 23:04:53 --> Call to undefined method App\Models\ObatKeluarModel::getJenisObat
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\KelolaObatKeluar.php(28): CodeIgniter\Model->__call('getJenisObat', [])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KelolaObatKeluar->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KelolaObatKeluar))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp1\\htdocs\\apotek\\public\\index.php')
+INFO - 2024-05-27 23:05:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-27 23:05:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-27 23:05:55 --> Call to undefined method App\Models\ObatKeluarModel::getJenisObat
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\KelolaObatKeluar.php(28): CodeIgniter\Model->__call('getJenisObat', [])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KelolaObatKeluar->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KelolaObatKeluar))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp1\\htdocs\\apotek\\public\\index.php')
+INFO - 2024-05-27 23:08:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-27 23:08:45 --> Call to undefined method App\Models\ObatKeluarModel::getJenisObat
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\KelolaObatKeluar.php(28): CodeIgniter\Model->__call('getJenisObat', [])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KelolaObatKeluar->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KelolaObatKeluar))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp1\\htdocs\\apotek\\public\\index.php')
+INFO - 2024-05-27 23:08:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-27 23:08:46 --> Call to undefined method App\Models\ObatKeluarModel::getJenisObat
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\KelolaObatKeluar.php(28): CodeIgniter\Model->__call('getJenisObat', [])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KelolaObatKeluar->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KelolaObatKeluar))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp1\\htdocs\\apotek\\public\\index.php')
+INFO - 2024-05-27 23:08:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-27 23:08:47 --> Call to undefined method App\Models\ObatKeluarModel::getJenisObat
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\KelolaObatKeluar.php(28): CodeIgniter\Model->__call('getJenisObat', [])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KelolaObatKeluar->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KelolaObatKeluar))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp1\\htdocs\\apotek\\public\\index.php')
+INFO - 2024-05-27 23:08:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-27 23:08:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-27 23:08:51 --> Call to undefined method App\Models\ObatKeluarModel::getJenisObat
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\KelolaObatKeluar.php(28): CodeIgniter\Model->__call('getJenisObat', [])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KelolaObatKeluar->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KelolaObatKeluar))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp1\\htdocs\\apotek\\public\\index.php')
+INFO - 2024-05-27 23:08:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-27 23:08:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-27 23:10:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-27 23:10:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-27 23:10:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-27 23:10:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-27 23:10:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-27 23:11:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-27 23:11:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-27 23:12:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-27 23:13:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-27 23:14:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-27 23:14:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-27 23:14:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-27 23:14:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-27 23:14:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-27 23:16:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-27 23:16:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-27 23:18:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-27 23:18:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-27 23:18:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-27 23:18:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-27 23:19:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-27 23:21:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-27 23:21:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-27 23:21:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-27 23:21:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-27 23:22:11 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`apotekrahmah`.`obat_keluar`, CONSTRAINT `obat_keluar_ibfk_1` FOREIGN KEY (`id_jenis_obat`) REFERENCES `jenis_obat` (`id_jenis`)) in C:\xampp1\htdocs\apotek\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp1\htdocs\apotek\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `je...', 0)
+#1 C:\xampp1\htdocs\apotek\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `je...')
+#2 C:\xampp1\htdocs\apotek\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `je...')
+#3 C:\xampp1\htdocs\apotek\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `je...', Array, false)
+#4 C:\xampp1\htdocs\apotek\vendor\codeigniter4\framework\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp1\htdocs\apotek\vendor\codeigniter4\framework\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp1\htdocs\apotek\app\Controllers\JenisObat.php(112): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp1\htdocs\apotek\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\JenisObat->hapus('14')
+#8 C:\xampp1\htdocs\apotek\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JenisObat))
+#9 C:\xampp1\htdocs\apotek\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp1\htdocs\apotek\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp1\htdocs\apotek\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp1\\htdoc...')
+#12 {main}
+CRITICAL - 2024-05-27 23:22:11 --> Cannot delete or update a parent row: a foreign key constraint fails (`apotekrahmah`.`obat_keluar`, CONSTRAINT `obat_keluar_ibfk_1` FOREIGN KEY (`id_jenis_obat`) REFERENCES `jenis_obat` (`id_jenis`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `jenis_obat`
+WHERE `id_jenis` IN :id_jenis:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\JenisObat.php(112): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\JenisObat->hapus('14')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JenisObat))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp1\\htdocs\\apotek\\public\\index.php')
+INFO - 2024-05-27 23:23:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-27 23:23:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-27 23:23:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-27 23:23:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-27 23:23:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-27 23:23:18 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`apotekrahmah`.`obat_keluar`, CONSTRAINT `obat_keluar_ibfk_1` FOREIGN KEY (`id_jenis_obat`) REFERENCES `jenis_obat` (`id_jenis`)) in C:\xampp1\htdocs\apotek\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp1\htdocs\apotek\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `je...', 0)
+#1 C:\xampp1\htdocs\apotek\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `je...')
+#2 C:\xampp1\htdocs\apotek\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `je...')
+#3 C:\xampp1\htdocs\apotek\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `je...', Array, false)
+#4 C:\xampp1\htdocs\apotek\vendor\codeigniter4\framework\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp1\htdocs\apotek\vendor\codeigniter4\framework\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp1\htdocs\apotek\app\Controllers\JenisObat.php(112): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp1\htdocs\apotek\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\JenisObat->hapus('8')
+#8 C:\xampp1\htdocs\apotek\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JenisObat))
+#9 C:\xampp1\htdocs\apotek\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp1\htdocs\apotek\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp1\htdocs\apotek\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp1\\htdoc...')
+#12 {main}
+CRITICAL - 2024-05-27 23:23:18 --> Cannot delete or update a parent row: a foreign key constraint fails (`apotekrahmah`.`obat_keluar`, CONSTRAINT `obat_keluar_ibfk_1` FOREIGN KEY (`id_jenis_obat`) REFERENCES `jenis_obat` (`id_jenis`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `jenis_obat`
+WHERE `id_jenis` IN :id_jenis:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\JenisObat.php(112): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\JenisObat->hapus('8')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JenisObat))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp1\\htdocs\\apotek\\public\\index.php')
+INFO - 2024-05-27 23:23:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-27 23:23:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-27 23:23:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-27 23:23:40 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`apotekrahmah`.`obat_keluar`, CONSTRAINT `obat_keluar_ibfk_1` FOREIGN KEY (`id_jenis_obat`) REFERENCES `jenis_obat` (`id_jenis`)) in C:\xampp1\htdocs\apotek\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp1\htdocs\apotek\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `je...', 0)
+#1 C:\xampp1\htdocs\apotek\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `je...')
+#2 C:\xampp1\htdocs\apotek\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `je...')
+#3 C:\xampp1\htdocs\apotek\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `je...', Array, false)
+#4 C:\xampp1\htdocs\apotek\vendor\codeigniter4\framework\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp1\htdocs\apotek\vendor\codeigniter4\framework\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp1\htdocs\apotek\app\Controllers\JenisObat.php(112): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp1\htdocs\apotek\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\JenisObat->hapus('14')
+#8 C:\xampp1\htdocs\apotek\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JenisObat))
+#9 C:\xampp1\htdocs\apotek\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp1\htdocs\apotek\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp1\htdocs\apotek\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp1\\htdoc...')
+#12 {main}
+CRITICAL - 2024-05-27 23:23:40 --> Cannot delete or update a parent row: a foreign key constraint fails (`apotekrahmah`.`obat_keluar`, CONSTRAINT `obat_keluar_ibfk_1` FOREIGN KEY (`id_jenis_obat`) REFERENCES `jenis_obat` (`id_jenis`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `jenis_obat`
+WHERE `id_jenis` IN :id_jenis:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\JenisObat.php(112): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\JenisObat->hapus('14')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JenisObat))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp1\\htdocs\\apotek\\public\\index.php')
+INFO - 2024-05-27 23:23:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-27 23:24:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-27 23:24:33 --> Call to undefined method App\Models\ObatKeluarModel::getJenisObat
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\KelolaObatKeluar.php(28): CodeIgniter\Model->__call('getJenisObat', [])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KelolaObatKeluar->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KelolaObatKeluar))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp1\\htdocs\\apotek\\public\\index.php')
